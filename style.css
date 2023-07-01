@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+    margin: 50px;
+}
+
+div {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+button {
+    border: 1px solid black;
+    margin: 5px;
+    height: 70px;
+}
+
+img {
+    margin: 5px;
+}
