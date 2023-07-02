@@ -21,70 +21,114 @@
 </head>
 <body>
   <main>
-      <!-- Comment #1 -->
-      <div class="post-container">
-        <div class="vote-btn">
-          <div class="upvote-btn">＋</div>
-          <div class="vote-counter">12</div>
-          <div class="downvote-btn">−</div>
+    <!-- Comment #1 -->
+    <div class="post-container">
+      <div class="vote-btn">
+        <div class="upvote-btn">＋</div>
+        <div class="vote-counter">12</div>
+        <div class="downvote-btn">−</div>
+      </div>
+      <div class="user-info">
+        <img class="pfp" src="./images/avatars/image-amyrobson.png" alt="profile" />
+        <div class="user-name">
+        amyrobson
         </div>
-        <div class="user-info">
-          <img class="pfp" src="./images/avatars/image-amyrobson.png" alt="profile" />
-          <div class="user-name">
-          amyrobson
-          </div>
-          <div class="post-date">
-          1 month ago
-          </div>
-        </div>
-        <button class="reply-btn">
-          <span class="material-icons-outlined material-icons">reply
-          </span>Reply
-        </button>
-        <div class="comment-body">
-        Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+        <div class="post-date">
+        1 month ago
         </div>
       </div>
-
-      <!-- Comment #2 -->
-      <div class="post-container">
-      <button>5</button>
-      <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-      maxblagun 
-      2 weeks ago
-      <p>
-      Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
-      </p>
+      <button class="reply-btn">
+        <span class="material-icons-outlined material-icons">reply
+        </span>Reply
+      </button>
+      <div class="comment-body">
+      Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+      </div>
       </div>
 
-      <!-- Comment #3 (Reply to comment #2) -->
-      <div class="reply">
-      <button>4</button>
-      <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-      ramsesmiron 
-      1 week ago
-      <p>
+    <!-- Comment #2 -->
+    <div class="post-container">
+      <div class="vote-btn">
+        <div class="upvote-btn">＋</div>
+        <div class="vote-counter">5</div>
+        <div class="downvote-btn">−</div>
+      </div>
+      <div class="user-info">
+        <img src="./images/avatars/image-maxblagun.png" alt="profile" />
+        <div class="user-name">
+        maxblagun
+        </div>
+        <div class="post-date">
+        2 weeks ago
+        </div>
+      </div>
+      <button class="reply-btn">
+        <span class="material-icons-outlined material-icons">reply
+        </span>Reply
+      </button>
+      <div class="comment-body">
+        Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+      </div>
+    </div>
+
+    <!-- Comment #3 (Reply to comment #2) -->
+    <div class="post-container post-container-reply">
+      <div class="vote-btn">
+        <div class="upvote-btn">＋</div>
+        <div class="vote-counter">4</div>
+        <div class="downvote-btn">−</div>
+      </div>
+      <div class="user-info">
+        <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
+        <div class="user-name">
+        ramsesmiron 
+        </div>
+        <div class="post-date">
+        1 weeks ago
+        </div>
+      </div>
+      <button class="reply-btn">
+        <span class="material-icons-outlined material-icons">reply
+        </span>Reply
+      </button>
+      <div class="comment-body">
       @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
-      </p>
-    </div>
+      </div>
+      </div>
+    <!-- Comment #4 (Reply to comment #2) -->
+    <div class="post-container post-container-reply">
+      <div class="vote-btn">
+        <div class="upvote-btn">＋</div>
+        <div class="vote-counter">2</div>
+        <div class="downvote-btn">−</div>
+      </div>
+      <div class="user-info">
+        <img src="./images/avatars/image-juliusomo.png" alt="profile" />
+        <div class="user-name">
+        juliusomo
+        </div>
+        <div class="post-date">
+        2 days ago
+        </div>
+      </div>
+      <button class="reply-btn">
+        <span class="material-icons-outlined material-icons">reply
+        </span>Reply
+      </button>
+      <div class="comment-body">
+      @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.      </div>
+      </div>
 
-      <!-- Comment #4 (Reply to comment #2) -->
-      <div class="reply">
-      <button>2</button>
-      <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-      juliusomo 
-      2 days ago
-      <p>
-      @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
-      </p>
-    </div>
 
     <!-- Add new comment box -->
-    <div>
-      <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-      <textarea class="add-comment">
-
-      </textarea>
+    <div class="post-container new-post-container">
+      <img class="image-send" src="./images/avatars/image-juliusomo.png" alt="profile" />
+      <div class="add-comment-body">
+        Add a comment
+      </div>
+      <button class="send-btn">
+        SEND
+      </button>
     </div>
 
   </main>

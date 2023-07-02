@@ -1,14 +1,14 @@
 body {
     background-color:hsl(211, 44%, 89%);
-    /* margin: 100px auto 100px auto; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 main {
     background-color:hsl(211, 44%, 89%);
+    display: grid;
+    grid-template-columns: 1fr .30fr 3fr 1fr;
+    gap:15px;
 }
-/* div {
-    border: 1px solid black;
-} */
+
 /* Primary
 Moderate blue: hsl(238, 40%, 52%)
 Soft Red: hsl(358, 79%, 66%)
@@ -20,18 +20,63 @@ Grayish Blue: hsl(211, 10%, 45%)
 Light gray: hsl(223, 19%, 93%)
 Very light gray: hsl(228, 33%, 97%)
 White: hsl(0, 0%, 100%) */
+/* .reply-wrapper {
+    border-left: 1px solid black;
+    margin: 10px 50px 10px 50px;
+} */
+.new-post-container {
+    display:flex !important;
+    padding:20px;
+    min-height: 150px;
+}
+.add-comment-body {
+    border: 1px solid black;
+    color: rgb(95, 93, 93);
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    margin: 15px 5px 30px 15px;
+    width: 500px;
+}
+.send-btn {
+    /* display: flex; */
+    background-color: hsl(238, 40%, 52%);
+    border:none;
+    border-radius: 5px;
+    color:hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 5px 0px 10px;
+    padding: 10px 5px;
+    align-self: start;
+    min-width: 80px;
+}
 
+.post-container-reply {
+    grid-column: 3/4 !important;
+    /* border-left: 1px solid black; */
+    /* margin: 10px auto 10px auto; */
+    /* position: relative; */
+    /* margin: 20px auto; */
+    /* padding-left: 100px; */
+    /* grid-row:2/4; */
+    /* margin-left: 100px; */
+    /* margin-right: 50px; */
+    /* max-width: 650px; */
+    /* justify-self: right; */
+}
 .post-container {
     background-color: hsl(0, 0%, 100%);
     display: grid;
+    grid-column: 2/4;
     grid-template-columns: 13% 47% 20% 20%;
     grid-template-rows: 1fr 1fr;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    max-height: 250px;
+    /* grid-row-end: 5; */
+    padding: 20px 20px 0px 20px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    /* margin: 10px auto 10px auto; */
+    /* max-width: 800px; */
+    /* max-height: 200px; */
 }
 .user-info {
     /* border: 1px solid black; */
@@ -39,7 +84,7 @@ White: hsl(0, 0%, 100%) */
     text-align: center;
     grid-column: 2/4;
     /* margin: 0px 0px 0px 0px; */
-    max-height: 50px;
+    max-height: 40px;
     /* padding: 10px; */
 }
 .user-name {
@@ -47,7 +92,7 @@ White: hsl(0, 0%, 100%) */
     font-size: 20px;
     font-weight: bold;
     padding: 5px auto 5px auto;
-    margin: auto 5px auto 1px;
+    margin: auto 0px auto 1px;
     min-width: 140px;
 }
 .post-date {
@@ -59,7 +104,7 @@ White: hsl(0, 0%, 100%) */
 
 .vote-btn {
     text-align: center;
-    background-color:hsl(240, 47%, 90%);
+    background-color:hsl(211, 44%, 89%);
     /* font-size: 18px; */
     grid-row-start: 1;
     grid-row-end: 3;
@@ -112,21 +157,20 @@ White: hsl(0, 0%, 100%) */
     font-weight: bold;
     grid-column: 4/5;
     align-self: start;
-    /* text-align: center; */
-    vertical-align: middle;
-    /* line-height: 0px; */
-    margin: 10px 0px 0px 15px;
-    /* padding-bottom: 10px; */
+    margin: 5px 0px 0px 0px;
+    padding: 2px;
     display: inline-flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .comment-body {
-    padding: 10px;
-    border: 1px solid black;
+    color: rgb(95, 93, 93);
+    padding: 10px 10px 10px 10px;
+    /* border: 1px solid black; */
     grid-row:2/3;
     grid-column: 2/5;
-    /* margin: 5px; */
+    margin-top: -25px;
+    margin: -25px 30px 20px 0px;
 }
 span {
     /* text-align: center; */
@@ -135,7 +179,48 @@ span {
     align-items: center; 
 }
 
-img {
+
+/* img {
     margin: 1px;
-    /* width: ; */
+    width: 10%;
+    height: 25%;
+} */
+img {
+    margin: 5px auto 0px auto;
+    width: 10%;
+    height: auto;
 }
+.image-send {
+    margin: 15px 5px 20px 5px;
+    width: 10%;
+    height: 30%;
+}
+
+
+
+/* .new-post-container {
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr !important;
+    min-height: 200px;
+}
+.add-comment-body {
+    border: 1px solid black;
+    grid-column: 2/4;
+    color: rgb(95, 93, 93);
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    margin: -25px 30px 20px 0px;
+}
+.send-btn {
+    grid-column: 4/5;
+    background-color: hsl(238, 40%, 52%);
+    border:none;
+    color:hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: bold;
+    align-self: start;
+    margin: 5px 0px 0px 0px;
+    padding: 2px;
+    display: inline-flex;
+    align-items: center;
+} */
